@@ -1,0 +1,199 @@
+body {
+	background: url("https://cdn.wallpapersafari.com/40/22/m3XAlx.jpg") no-repeat center center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mainContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 100%
+}
+
+#outer-grid {
+  display: grid;
+  grid-template-rows: 0.5fr 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+}
+
+#outer-grid > div {
+  color: black;
+  font-size: 3vw;
+  font-weight: 100;
+  padding: 0 5px 0 5px;
+  /*border: 1px solid black;*/
+}
+
+#inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+#inner-grid > div {
+  /*border: 1px solid black;*/
+  /*padding: 8px;*/
+}
+
+#nav {
+	display: flex;
+  	align-items: center;
+}
+
+#socials {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+#socials .socialButtons {
+	text-align: center;
+	width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+#socials .socialButtons a {
+	text-decoration: none;
+	color: black;
+	
+}
+
+#map {
+	display: flex;
+	position: relative;
+	padding-bottom: 75%; 	
+    height: 0;
+    overflow: hidden;
+}
+
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div5 { grid-area: 1 / 1 / 2 / 3; }
+.div6 { grid-area: 2 / 1 / 2 / 3; }
+
+.div1, .div6 {
+	font-family: 'Dancing Script', cursive;
+ 	color: black;
+}
+
+p {
+	display: block;
+	margin: 0;
+	font-size: 1.5vw;
+	text-align: center;
+	padding: 2px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.5vw;
+}
+
+li {
+  float: left;
+}
+
+li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-right: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  border-bottom: 0.5px solid black;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.mySlides {display: none}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
